@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE festival SYSTEM 'festival.dtd'>
+<festival>
+  <nombre>Festival Tech 2026</nombre>
+  <ciudad>Oviedo</ciudad>
+  <fechas>
+    <fecha>
+      <dia>Viernes</dia>
+      <mes>OCT</mes>
+      <num>23</num>
+      <anio>2026</anio>
+    </fecha>
+    <fecha>
+      <dia>Sábado</dia>
+      <mes>OCT</mes>
+      <num>24</num>
+      <anio>2026</anio>
+    </fecha>
+  </fechas>
+  <lugar>Centro Joven Digital</lugar>
+
+  <actividades>
+    <actividad id="a1" tipo="robotica">
+      <titulo>Batalla de Robots</titulo>
+      <descripcion>Competición de robots diseñados por estudiantes.</descripcion>
+      <hora>10:00</hora>
+      <precio>Gratis</precio>
+    </actividad>
+    <actividad id="a2" tipo="videojuegos">
+      <titulo>Torneo Gaming Retro</titulo>
+      <descripcion>Competición de videojuegos clásicos y actuales.</descripcion>
+      <hora>12:00</hora>
+      <precio>3€</precio>
+    </actividad>
+    <actividad id="a3" tipo="ia">
+      <titulo>Taller de Inteligencia Artificial</titulo>
+      <descripcion>Aprende cómo funciona una IA creando un pequeño chatbot.</descripcion>
+      <hora>16:00</hora>
+      <precio>5€</precio>
+    </actividad>
+    <actividad id="a4" tipo="ciberseguridad">
+      <titulo>Masterclass sobre ciberseguridad</titulo>
+      <descripcion>Aprende a blindar tu empresa contra ciberataques y estafas.</descripcion>
+      <hora>18:00</hora>
+      <precio>Gratis</precio>
+    </actividad>
+  </actividades>
+  <contacto>
+    <email>info@festivaltech.com</email>
+    <telefono>666555444</telefono>
+  </contacto>
+  <planes>
+    <plan id="plan1">
+      <nombre>General</nombre>
+      <precio>25€</precio>
+      <ventajas>
+        <ventaja>Acceso a la convención</ventaja>
+        <ventaja>Música en vivo</ventaja>
+        <ventaja>Networking básico</ventaja>
+      </ventajas>
+    </plan>
+    <plan id="plan2">
+      <nombre>Pro Tech</nombre>
+      <precio>55€</precio>
+      <ventajas>
+        <ventaja>Todo lo de General</ventaja>
+        <ventaja>Acceso a charlas VIP</ventaja>
+        <ventaja>Consumición + Regalo Tech</ventaja>
+        <ventaja>Zona de descanso exclusiva</ventaja>
+      </ventajas>
+    </plan>
+  </planes>
+</festival>

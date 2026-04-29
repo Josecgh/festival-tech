@@ -1,0 +1,25 @@
+<!ELEMENT festival (nombre, ciudad, fechas, lugar, actividades, contacto, planes)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT fechas (fecha*)>
+<!ELEMENT fecha (dia, mes, num, anio)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT num (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT actividades (actividad*)>
+<!ELEMENT actividad (titulo, descripcion, hora, precio)>
+<!ATTLIST actividad id ID #REQUIRED tipo (robotica | videojuegos | ia | realidad_virtual | programacion | ciberseguridad) #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT contacto (email?, telefono)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT planes (plan*)>
+<!ELEMENT plan (nombre, precio, ventajas)>
+<!ATTLIST plan id ID #REQUIRED>
+<!ELEMENT ventajas (ventaja*)>
+<!ELEMENT ventaja (#PCDATA)>

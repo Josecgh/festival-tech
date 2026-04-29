@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festival Tech</title>
+  <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+  <header>
+    <img src="/assets/images/festtech_logo.png" class="logo">
+  </header>
+  <section class="hero">
+    <h1 class="title" id="title"></h1>
+    <p class="text-hero">Disfruta de la mejor música acompañado de el mejor entretenimiento tecnológico.</p>
+  </section>
+  <main>
+    <section class="pros">
+      <h2>¿Por qué deverías de venir?</h2>
+      <section class="articles-container">
+        <article class="article">
+          <img src="/assets/icons/music_icon.png" alt="music icon">
+            <div class="article-description">
+              <h3>Música ambiental</h3>
+              <p>Escucha la mejor música mientras disfrutas de un buen café</p>
+            </div>
+          </article>
+        <article class="article">
+          <img src="/assets/icons/tech_icon.png" alt="tech icon">
+          <div class="article-description">
+            <h3>Tecnología y redes</h3>
+            <p>Admira e interactúa con los últimos avances tecnologicos.</p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="/assets/icons/enterprise_icon.png" alt="enterprise icon">
+          <div class="article-description">
+            <h3>Contactos con empresas</h3>
+            <p>Hablate con empresas, nunca se sabe cuando podrías tener tu oportunidad.</p>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <section class="activities-container">
+      <h2>Lista de actividades</h2>
+      <ul id="actividades">
+      </ul>
+    </section>
+
+    <section class="hours">
+      <div class="hours-content">
+        <h2>Horarios de apertura y cierre</h2>
+        <div class="schedule-container">
+          <div class="schedule-day day-1">
+            <div class="day-header">
+              DÍA 1: VIERNES
+              <span>(INAUGURACIÓN)</span>
+            </div>
+            <div class="day-date">OCT 23</div>
+            <div class="times">
+              <div class="time-block aperture">
+                APERTURA: <span>09:00 AM</span>
+              </div>
+              <div class="time-block cierre">
+                CIERRE: <span>10:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-day day-2">
+            <div class="day-header">
+              DÍA 2: SÁBADO
+              <span>(INNOVACIÓN)</span>
+            </div>
+            <div class="day-date">OCT 24</div>
+            <div class="times">
+              <div class="time-block aperture">
+                APERTURA: <span>08:30 AM</span>
+              </div>
+              <div class="time-block cierre">
+                CIERRE: <span>11:30 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="location">
+      <div class="location-content">
+        <h2>Ubicación</h2>
+        <div class="location-grid">
+          <div class="location-info">
+            <div class="info-item">
+              <span class="info-label">Lugar:</span>
+              <p id="lugar"></p>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Dirección:</span>
+              <p id="ciudad"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing">
+      <h2>Entradas</h2>
+      <div class="pricing-container">
+        <!-- <article class="price-card">
+          <div class="price-header">
+            <h3>General</h3>
+            <p class="amount">25€</p>
+          </div>
+          <ul class="features">
+            <li>Acceso a la convención</li>
+            <li>Música en vivo</li>
+            <li>Networking básico</li>
+          </ul>
+          <button class="btn-pay">Comprar ahora</button>
+        </article>
+
+        <article class="price-card featured">
+          <div class="price-header">
+            <span class="badge">Recomendado</span>
+            <h3>Pro Tech</h3>
+            <p class="amount">55€</p>
+          </div>
+          <ul class="features">
+            <li>Todo lo de General</li>
+            <li>Acceso a charlas VIP</li>
+            <li>Consumición + Regalo Tech</li>
+            <li>Zona de descanso exclusiva</li>
+          </ul>
+          <button class="btn-pay">Comprar ahora</button>
+        </article> -->
+      </div>
+    </section>
+    <footer class="footer">
+      <h2>Registro de Asistente</h2>
+        <form action="#">
+          <div class="input-group">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label for="ticket-type">Tipo de Entrada</label>
+              <select id="ticket-type">
+                <option value="general">Entrada General</option>
+                <option value="vip">Pase VIP</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="cantidad">Cantidad</label>
+              <input type="number" id="cantidad" min="1" max="10" value="1">
+            </div>
+          </div>
+
+          <div class="input-group checkbox-group">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">Acepto los términos y condiciones</label>
+          </div>
+
+          <button type="submit" class="btn-submit">Confirmar Registro</button>
+      </form>
+    </footer>
+  </main>
+  <script type="module" src="js/festivalObj.js"></script>
+</body>
+</html>
