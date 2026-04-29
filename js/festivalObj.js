@@ -156,4 +156,4 @@ export async function xmlAObjeto(url) {
   }
 }
 
-xmlAObjeto("../festival.xml");
+xmlAObjeto('./festival.xml');
